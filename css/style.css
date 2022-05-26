@@ -41,27 +41,39 @@
     display: none;
     background-image: url(/img/arena.jpg);
     background-size: cover;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
+
+}
+.cabecera{
+    color: yellow;
 }
 
 .contenedor-players{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
 
 }
 
 img{
-width: 10em;
-height: 10em;
-margin: 2em;
-border: 3px solid rgb(34, 235, 16);
-border-radius: 40%;
-box-shadow: 10px 10px 48px 73px rgba(0,0,0,0.79);
+    cursor: crosshair;
+    width: 10em;
+    height: 10em;
+    margin: 4em;
+    border: 3px solid rgb(34, 235, 16);
+    border-radius: 40%;
+    box-shadow: 0px 0px 42px 34px rgba(0,0,0,0.79);
 }
+img:hover{
 
+    width: 9.5em;
+    height: 9.5em;
+    border-radius: 100%;
+    box-shadow: 0px 0px 50px 34px rgb(165, 240, 122);
+    transform: rotate(360deg);
+    transition-duration: .5s;
+
+    transition-delay: .2s;
+}
 
 
 
