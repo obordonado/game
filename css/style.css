@@ -4,3 +4,112 @@
     margin: 0;
 }
 
+#pantalla1 {
+    height: 100vh;
+    background-image: url(/img/pantalla-inicio.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-start {
+    font-family: Helvetica;
+    letter-spacing: 0.4em;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    color:#f00;
+    outline-color: #0f0;
+    cursor: pointer;
+    outline: .2em solid;
+    transition: all .3s cubic-bezier(0.8, 0, 0, 0.2);
+  }
+  .btn-start:hover {
+    color: #0f0;
+    outline-color: #f00;
+    outline-offset: 35em;
+    font-size: 5em;
+    font-weight: 600;
+  }
+
+
+
+
+
+#pantalla2 {
+    height: 100vh;
+    /* display: none; */
+    background-image: url(/img/arena.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+}
+.img-seleccion{
+    width: 100vw;
+    height: 100vh;
+}
+.player{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pantalla3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    display: none;
+}
+
+#pantalla4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    display: none;
+}
+
+#pantalla5 {
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    display: none;
+}
+
+
+.logo {
+    height: 15em;
+    width: 27em;
+} 
