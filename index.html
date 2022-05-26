@@ -11,9 +11,17 @@
 <body>
 
   <div id="pantalla1">
-    <p class="btn-start" onclick="screenSwitch('pantalla2')">START</p>
+    <!-- dividir en 3 divs row y dejar boton en medio
+    Agregar en divs algunos gifs, o texto -->
     
-    <audio src="/music/inicio.mp3" autoplay loop></audio>
+    <p class="btn-start" onclick="screenSwitch('pantalla2')">START</p>
+
+
+
+
+
+    
+    <!-- <audio src="/music/inicio.mp3" autoplay loop></audio> -->
   </div>
 
 
@@ -21,7 +29,10 @@
 
  <div id="pantalla2" onclick="screenSwitch('pantalla3')">
 
-<!-- modificar onclick cuando se tengan seleccionados dos jugadores -->
+<!-- modificar onclick cuando se tengan seleccionados dos jugadores 
+Poner algo de información acerca de los bichos 
+Boton mejor que div????
+-->
   <div class="cabecera"><h1>ELIGE A TU POKEMON FAVORITO</h1></div>
 
 
@@ -63,7 +74,11 @@
     </div>
   </div>
 
-
+  <div class="player">
+    <input type="image">
+    <img src="/img/vaporeon.png" alt="blastoise">
+  </div>
+</div>
 
  </div>
   
@@ -74,7 +89,14 @@
   
   
   
-  <div id="pantalla3" onclick="screenSwitch('pantalla4')"></div>
+  <div id="pantalla3" onclick="screenSwitch('pantalla4')">
+  
+  </div>
+
+
+
+
+
   <div id="pantalla4" onclick="screenSwitch('pantalla5')"></div>
   <div id="pantalla5" onclick="screenSwitch('pantalla1')"></div>
 

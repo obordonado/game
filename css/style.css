@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .btn-start {
     font-family: Helvetica;
     letter-spacing: 0.4em;
@@ -32,15 +33,12 @@
     font-weight: 600;
   }
 
-
-
-
-
 #pantalla2 {
     height: 100vh;
     display: none;
     background-image: url(/img/arena.jpg);
     background-size: cover;
+    cursor: pointer;
 
 }
 .cabecera{
@@ -50,12 +48,10 @@
 .contenedor-players{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    
-
 }
 
 img{
-    cursor: crosshair;
+    cursor:none;
     width: 10em;
     height: 10em;
     margin: 4em;
@@ -64,18 +60,20 @@ img{
     box-shadow: 0px 0px 42px 34px rgba(0,0,0,0.79);
 }
 img:hover{
-
     width: 9.5em;
     height: 9.5em;
     border-radius: 100%;
     box-shadow: 0px 0px 50px 34px rgb(165, 240, 122);
     transform: rotate(360deg);
     transition-duration: .5s;
-
     transition-delay: .2s;
 }
 
-
+#pantalla3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://giphy.com/gifs/pokemon-post-malone-pokemon-25-gtuQIOTlQdk9Mx3L5i");
+}
 
 
 
