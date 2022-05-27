@@ -7,7 +7,7 @@ class Pokemon{
   }
 }
 
-defender(){
+defender = () => {
   if(this.puntosvida<100){
     this.puntosvida =this.puntosvida + 20;
   }
