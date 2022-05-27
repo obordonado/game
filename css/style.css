@@ -69,39 +69,6 @@ img:hover{
     transition-delay: .1s;
 }
 
-#pantalla3{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://giphy.com/gifs/pokemon-post-malone-pokemon-25-gtuQIOTlQdk9Mx3L5i");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #pantalla3 {
@@ -111,7 +78,7 @@ img:hover{
     display: none;
 }
 
-#pantalla4 {
+/* #pantalla4 {
     height: 100vh;
     width: 100vw;
     background-color: yellow;
@@ -123,7 +90,7 @@ img:hover{
     width: 100vw;
     background-color: orange;
     display: none;
-}
+} */
 
 
 .logo {
