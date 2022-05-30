@@ -13,26 +13,3 @@ const screenSwitch = (pantallaDestino) => {
    
 };
 
-
-seleccionados = document.getElementById("seleccionados");
-
-let jugadorUno = "";
-let jugadorDos = "";
-
-let seleccion = 1;
-const seleccionar = (seleccionado) =>{
-
-switch (seleccion) {
-  case 1:
-    jugadorUno=allplayers[seleccionado];    
-  break;
-  case 1:
-    jugadorDos=allplayers[seleccionado];    
-  break;
-
-default:
-// Insertar en innerHTML #seleccionados "ya se han seleccionado los jugadores"
-//create element button para continuar.
-break;
-}
-}

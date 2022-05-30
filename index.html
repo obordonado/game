@@ -28,24 +28,32 @@
     
   
   <div class="contenedor-players">
-    <div><img class="player" src="./img/bicho.png" alt="tortuga"></div>
-    <div><img class="player" src="./img/bichoDos.png" alt="conejo"></div>
-    <div><img class="player" src="./img/bichoTres.png" alt="verdura"></div>
-    <div><img class="player" src="./img/blastoise.png" alt="blastoise"></div>
+    <div><img class="player" onclick="selecciona(`1`)" src="./img/bicho.png" alt="tortuga"></div>
+    <div><img class="player" onclick="selecciona(`2`)" src="./img/bichoDos.png" alt="conejo"></div>
+    <div><img class="player" onclick="selecciona(`3`)" src="./img/bichoTres.png" alt="verdura"></div>
+    <div><img class="player" onclick="selecciona(`4`)" src="./img/blastoise.png" alt="blastoise"></div>
   </div>
 
   <div class="contenedor-players">
-    <div><img class="player" src="./img/coloseum.png" alt="coloseum"></div>
-    <div><img class="player" src="./img/dino.png" alt="dino"></div>
-    <div><img class="player" src="./img/evee.png" alt="evee"></div>
-    <div><img class="player" src="./img/vaporeon.png" alt="vaporeon"></div>
+    <div><img class="player" onclick="selecciona(`5`)" src="./img/coloseum.png" alt="coloseum"></div>
+    <div><img class="player" onclick="selecciona(`6`)" src="./img/dino.png" alt="dino"></div>
+    <div><img class="player" onclick="selecciona(`7`)" src="./img/evee.png" alt="evee"></div>
+    <div><img class="player" onclick="selecciona(`8`)" src="./img/vaporeon.png" alt="vaporeon"></div>
 </div>
   <div class="elegidos">
     <div class="elegidoUno elegido"></div>
+    
     <div><img class="versus" src="./img/Versus.png" alt="versus"></div>
+ 
     <div class="elegidoDos elegido"></div>
+ 
+ 
     <div class="btn" onclick="screenSwitch('pantalla3')">LET`S GO!!</div>
 
+  </div>
+  <div class="datos">
+    <div class="elegidoUnoData mostrar ">DATOS PRIMERO BLA BLA</div>
+    <div class="elegidoDosData mostrar ">DATOS PRIMERO BLA BLA</div>
   </div>
 
 </div>  
@@ -71,8 +79,8 @@
 
 
 
-    
-  <script src="./js/functions.js"></script>
+  <script src="./js/main.js"></script>    
+  <!-- <script src="./js/functions.js"></script> -->
   <script src="./js/clase_jugadores.js"></script>
 </body>
 </html>
