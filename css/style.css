@@ -55,24 +55,23 @@
 
 }
 .btn{
-    margin-top: 2em;
     width: 10em;
     height: 1em;
     font-family: Helvetica;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.2em;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 3em;
     text-align: center;
     color:#f00;
     outline-color: #0f0;
     cursor: pointer;
-    outline: .1em solid;
+    outline: .05em solid;
     transition: all .3s cubic-bezier(0.8, 0, 0, 0.2);
 }
 .btn:hover {
     color: #0f0;
-    outline-color: #f00;
-    outline-offset: 1em;
+    outline-color: #0f0;
+    outline-offset: .2em;
     font-weight: 600;
   }
 
@@ -121,7 +120,6 @@
     height: 15em;
 
 }
-
 
 
 
