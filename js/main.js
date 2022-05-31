@@ -29,8 +29,8 @@ const selecciona = (bicho) => {
 
         //Diccionario de js
         jugador.push(allPlayers[bicho]);
-        bichoIzquierda.innerHTML = jugador[0].nombre;
-        bichoDerecha.innerHTML = jugador[1].nombre;
+        bichoIzquierda.innerHTML = `Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+        bichoDerecha.innerHTML = `Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
         console.log(jugador);
     }
 }
