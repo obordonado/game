@@ -29,10 +29,14 @@ let dino = new Pokemon("Dino",210,83,58);
 let evee = new Pokemon("Evee",270,80,65);
 let vaporeon = new Pokemon("Vaporeon",280,86,72);
 
-let allplayers = {
-  "1": player1,
-  "2": player2,
-  "3": player3,
-  "4": player4
+let allPlayers = {
+  "1": tortuga,
+  "2": conejo,
+  "3": verdura,
+  "4": blastoise,
+  "5": coloseum,
+  "6": dino,
+  "7": evee,
+  "8": vaporeon,
 }
 

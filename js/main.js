@@ -1,14 +1,12 @@
 
-let jugadores = [];
+let jugador = [];
 
-let ganador = "";
+// let ganador = "";
 
-let vistaVersus = document.getElementById("padreTres");
-let cocheIzquierda = document.getElementById("cocheIzquierda");
-let cocheDerecha = document.getElementById("cocheDerecha");
-let metrosIzquierda;
-let metrosDerecha;
-let winnerIs = document.getElementById("winnerIs");
+
+let bichoIzquierda = document.getElementById("elegidoUnoData");
+let bichoDerecha = document.getElementById("elegidoDosData");
+
 
 const screenSwitch = (pantallaDestino) => {
 
@@ -24,95 +22,96 @@ const screenSwitch = (pantallaDestino) => {
    
 };
 
-const selecciona = (car) => {
+const selecciona = (bicho) => {
     
     
-    if(jugadores.length < 2){
+    if(jugador.length < 2){
 
         //Diccionario de js
-        jugadores.push(allCars[car]);
-        console.log(jugadores);
+        jugador.push(allPlayers[bicho]);
+        bichoIzquierda.innerHTML = jugador[0].nombre;
+        bichoDerecha.innerHTML = jugador[1].nombre;
+        console.log(jugador);
+    }
+}
 
         //Una vez hemos introducido el coche en el array...
         //comprobamos si la longitud del array es 2. 
         //Eso significaría que ya tenemos los dos coches y que hay que cambiar de pantalla
 
-        if(jugadores.length === 2){
+//         if(jugadores.length === 2){
 
-            setTimeout(()=>{
+//             setTimeout(()=>{
 
-                //Diseñamos el contenido de la pantalla3 antes de mostrarla dando el cambiazo
-                vistaVersus.innerHTML = `<div class='hijoVersus'><img class='fotoVersus' src='img/${jugadores[0].modelo}.jpg' alt='asdfasdf'></div><div class='hijo3'><img class='fotoVersus' src='img/logovs.jpg'/><div class='hijoVersus'><img class='fotoVersus' src='img/${jugadores[1].modelo}.jpg' alt='asdfasdf'></div>`;
-                screenSwitch("pantalla3");
+//                 //Diseñamos el contenido de la pantalla3 antes de mostrarla dando el cambiazo
+//                 vistaVersus.innerHTML = `<div class='hijoVersus'><img class='fotoVersus' src='img/${jugadores[0].modelo}.jpg' alt='asdfasdf'></div><div class='hijo3'><img class='fotoVersus' src='img/logovs.jpg'/><div class='hijoVersus'><img class='fotoVersus' src='img/${jugadores[1].modelo}.jpg' alt='asdfasdf'></div>`;
+//                 screenSwitch("pantalla3");
 
-                setTimeout(()=>{
+//                 setTimeout(()=>{
 
-                    cocheIzquierda.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[0].modelo}.jpg'/></div><div>${jugadores[0].marca}</div><div id='metrosIzquierda'>${jugadores[0].metros}</div>`;
-                    cocheDerecha.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[1].modelo}.jpg'/></div><div>${jugadores[1].marca}</div><div id='metrosDerecha'>${jugadores[1].metros}</div>`;
+//                     cocheIzquierda.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[0].modelo}.jpg'/></div><div>${jugadores[0].marca}</div><div id='metrosIzquierda'>${jugadores[0].metros}</div>`;
+//                     cocheDerecha.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[1].modelo}.jpg'/></div><div>${jugadores[1].marca}</div><div id='metrosDerecha'>${jugadores[1].metros}</div>`;
 
-                    metrosIzquierda = document.getElementById("metrosIzquierda");
-                    metrosDerecha = document.getElementById("metrosDerecha");
+//                     metrosIzquierda = document.getElementById("metrosIzquierda");
+//                     metrosDerecha = document.getElementById("metrosDerecha");
 
-                    screenSwitch("pantalla4");
+//                     screenSwitch("pantalla4");
 
                     
-                },2000);
-            },500);
-        }
+//                 },2000);
+//             },500);
+//         }
 
-    }
+//     }               
+
+// };
+
+// const play = () => {
     
-        
-                
+//     let random = Math.round(Math.random());
 
-};
+//     jugadores[random].acelerar();
 
-const play = () => {
-    
-    let random = Math.round(Math.random());
-
-    jugadores[random].acelerar();
-
-    if(jugadores[random].metros >= 200){
+//     if(jugadores[random].metros >= 200){
 
 
 
-        setTimeout(()=>{
+//         setTimeout(()=>{
 
-            winnerIs.innerHTML = `${jugadores[random].marca}`;
+//             winnerIs.innerHTML = `${jugadores[random].marca}`;
 
-            screenSwitch("pantalla5");
-        },500)
-    }
+//             screenSwitch("pantalla5");
+//         },500)
+//     }
 
-    if(random == 0){
+//     if(random == 0){
 
-        metrosIzquierda.innerHTML = `${jugadores[random].metros}`;
-    } else {
-        metrosDerecha.innerHTML = `${jugadores[random].metros}`;
-    }
+//         metrosIzquierda.innerHTML = `${jugadores[random].metros}`;
+//     } else {
+//         metrosDerecha.innerHTML = `${jugadores[random].metros}`;
+//     }
 
 
-};
+// };
 
-const limpiar = () => {
+// const limpiar = () => {
 
-    jugadores = [];
+//     jugadores = [];
 
-    ganador = "";
+//     ganador = "";
 
-    metrosIzquierda.innerHTML = ``;
+//     metrosIzquierda.innerHTML = ``;
 
-    metrosDerecha.innerHTML = ``;
+//     metrosDerecha.innerHTML = ``;
 
-    coche1.metros = 0;
-    coche2.metros = 0;
-    coche3.metros = 0;
-    coche4.metros = 0;
+//     coche1.metros = 0;
+//     coche2.metros = 0;
+//     coche3.metros = 0;
+//     coche4.metros = 0;
 
-    setTimeout(()=>{
+//     setTimeout(()=>{
 
-        screenSwitch("pantalla1");
-    },500);
+//         screenSwitch("pantalla1");
+//     },500);
 
-};
+// };
