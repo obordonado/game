@@ -154,8 +154,6 @@
     height: 100vh;
     position: relative;
     z-index: 2;
-    border: 1px solid yellow;
-    color: yellow;
 }
 .cont-lados{
     width: 50%;
@@ -164,7 +162,6 @@
 .cont-barra{
     width: 100%;
     height: 10vh;
-    background-color: #0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +170,7 @@
     width: 80%;
     height: 2em;
     background-color: #f00;
+    box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
     border-radius: .5em;
 }
 .cont-stats{
@@ -181,14 +179,12 @@
     justify-content: center;
     width: 100%;
     height: 20vh;
-    background-color: aqua;
 }
 .elegido3{
     width: 20em;
     height: 9em;
     border-radius: 3em;
     box-shadow: 0px 0px 32px 14px #ddd;
-
     background-color: blueviolet;
 }
 .cont-imagen{
@@ -197,14 +193,12 @@
     justify-content: center;
     width: 100%;
     height: 50vh;
-    background-color: chartreuse;
 }
 .imagen-pag-tres{
     width: 25em;
     height: 25em;
     border-radius: 4em;
     box-shadow: 0px 0px 32px 14px #ddd;
-
     background-color: #f00;
 }
 
@@ -214,20 +208,32 @@
     justify-content: center;
     width: 100%;
     height: 20vh;
-    background-color: chocolate;
 }
 .boton{
     margin:0em 1em 0em 1em;
-    width: 4em;
-    height: 3em;
-    color: rgb(230, 230, 230);
-    font-size: 2em;
-    padding: .2em;
-    text-align: center;
+    width: 6em;
+    height: 4em;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:1.5em;
+	border:1px solid #d02718;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:2em;
+	padding:.2em;
+	text-shadow:5px 5px 2px #810e05;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
-    border-radius: 1em;
-    background: rgb(210, 20, 20);
-    background: linear-gradient(0deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+}
+.boton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.boton:active {
+	position:relative;
+	top:1px;
     box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
+    color: #f00;
 }
