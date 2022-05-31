@@ -38,7 +38,7 @@
 
 
 #pantalla2 {
-    height: 100vh;
+    /* height: 100vh; */
     display: none;
     background-image: url(/img/arena.jpg);
     background-size: cover;
@@ -128,7 +128,6 @@
 .mostrar{
     width: 15em;
     height: 9em;
-    border: 1px solid yellow;
     margin-top: .2em;
     margin-left: 20.5em;
     padding: .5em;
