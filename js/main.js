@@ -29,11 +29,11 @@ const selecciona = (bicho) => {
 
         //Diccionario de js
         jugador.push(allPlayers[bicho]);
-        bichoIzquierda.innerHTML = `Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-        bichoDerecha.innerHTML = `Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+        bichoIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+        bichoDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
         console.log(jugador);
     }
-}
+}// OJO A RESOLUCION PANTALLA PORTATIL
 
         //Una vez hemos introducido el coche en el array...
         //comprobamos si la longitud del array es 2. 
