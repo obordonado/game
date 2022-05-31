@@ -6,7 +6,8 @@ let jugador = [];
 
 let bichoIzquierda = document.getElementById("elegidoUnoData");
 let bichoDerecha = document.getElementById("elegidoDosData");
-
+let imagenIzquierda = document.getElementById("elegidoUno");
+let imagenDerecha = document.getElementById("elegidoDos");
 
 const screenSwitch = (pantallaDestino) => {
 
@@ -29,8 +30,9 @@ const selecciona = (bicho) => {
 
         //Diccionario de js
         jugador.push(allPlayers[bicho]);
-        bichoIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-        bichoDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+        imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+        imagenDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+        
         console.log(jugador);
     }
 }// OJO A RESOLUCION PANTALLA PORTATIL

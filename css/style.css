@@ -38,7 +38,7 @@
 
 
 #pantalla2 {
-    /* height: 100vh; */
+    height: 100vh;
     display: none;
     background-image: url(/img/arena.jpg);
     background-size: cover;
@@ -107,9 +107,12 @@
     justify-content: center;
 }
 .elegido{
+    text-align: center;    
+    color: yellow;
+    font-size:x-large;
     cursor:none;
     width: 12em;
-    height: 12em;
+    height: 8em;
     margin: 4em 4em 0em 4em;
     border: .1em solid rgb(34, 235, 16);
     border-radius: 40%;
@@ -121,17 +124,6 @@
     margin-top: 3em;
 }
 
-.datos{
-    display: flex;    
-    color: yellow;
-}
-.mostrar{
-    width: 15em;
-    height: 9em;
-    margin-top: .2em;
-    margin-left: 20.5em;
-    padding: .5em;
-}
 
 
 
