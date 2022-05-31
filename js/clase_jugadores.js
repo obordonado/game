@@ -7,7 +7,7 @@ class Pokemon {
     this.defensa = defensa;
   }
 
-  defender() {
+  recuperar() {
     if(this.puntosvida<100){
       this.puntosvida =this.puntosvida + 20;
     }
