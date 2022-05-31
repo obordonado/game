@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* INICIO PANTALLA 1 */
 #pantalla1 {
     height: 100vh;
     background-image: url(/img/pantalla-inicio.jpg);
@@ -24,19 +24,16 @@
     cursor: pointer;
     outline: .2em solid;
     transition: all .3s cubic-bezier(0.8, 0, 0, 0.2);
-  }
+}
   .boton-start:hover {
     color: #0f0;
     outline-color: #f00;
     outline-offset: 35em;
     font-size: 5em;
     font-weight: 600;
-  }
-
-
+}
 
 /* INICIO PANTALLA 2 */
-
 #pantalla2 {
     height: 100vh;
     display: none;
@@ -53,7 +50,6 @@
     flex-direction: column;
     align-items: center;
     letter-spacing: .5em;
-
 }
 .btn{
     width: 10em;
@@ -75,13 +71,11 @@
     outline-offset: .2em;
     font-weight: 600;
   }
-
 .contenedor-players{
     display: flex;
     justify-content: center;
     align-items: center;   
 }
-
 .player{
     cursor:none;
     width: 9em;
@@ -98,7 +92,6 @@
     transition-duration: .5s;
     transition-delay: .1s;
 }
-
 .elegidos{
     display: flex;
     justify-content: center;
@@ -184,8 +177,12 @@
     width: 20em;
     height: 9em;
     border-radius: 3em;
-    box-shadow: 0px 0px 32px 14px #ddd;
-    background-color: blueviolet;
+    box-shadow: 0px 0px 32px 14px yellow;
+    color: yellow;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cont-imagen{
     display: flex;
@@ -198,8 +195,7 @@
     width: 25em;
     height: 25em;
     border-radius: 4em;
-    box-shadow: 0px 0px 32px 14px #ddd;
-    background-color: #f00;
+    box-shadow: 0px 0px 32px 14px #000;    
 }
 
 .cont-boton{
@@ -212,7 +208,7 @@
 .boton{
     margin:0em 1em 0em 1em;
     width: 6em;
-    height: 4em;
+    height: 3em;
     box-shadow: 3px 4px 0px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
