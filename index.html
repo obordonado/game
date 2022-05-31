@@ -6,27 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>########</title>
+    <title>|| PROYECTO JUEGO ||</title>
 </head>
 <body>
 
-  <div id="pantalla1">
-    <!-- dividir en 3 divs row y dejar boton en medio
-    Agregar en divs algunos gifs, o texto -->
-    
-    <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>
-    
-    <audio src="/music/inicio.mp3" autoplay loop></audio>
-  </div>
-
-
-
+<div id="pantalla1">  
+  <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>    
+  <!-- <audio src="/music/inicio.mp3" autoplay loop></audio> -->
+</div>
 
 <div id="pantalla2" >
   
   <div class="cabecera"><h1>ELIGE A DOS CONTRINCANTES</h1></div>  
     
-  
   <div class="contenedor-players">
     <div><img class="player" onclick="selecciona(`1`)" src="./img/bicho.png" alt="tortuga"></div>
     <div><img class="player" onclick="selecciona(`2`)" src="./img/bichoDos.png" alt="conejo"></div>
@@ -39,37 +31,94 @@
     <div><img class="player" onclick="selecciona(`6`)" src="./img/dino.png" alt="dino"></div>
     <div><img class="player" onclick="selecciona(`7`)" src="./img/evee.png" alt="evee"></div>
     <div><img class="player" onclick="selecciona(`8`)" src="./img/vaporeon.png" alt="vaporeon"></div>
-</div>
-
-
-  <div class="elegidos">
-    <div id="elegidoUno" class="elegidoUno elegido"></div>
-    
-    <div><img class="versus" src="./img/Versus.png" alt="versus"></div>
- 
-    <div id="elegidoDos" class="elegidoDos elegido"></div>
- 
- 
-    <div class="btn" onclick="screenSwitch('pantalla3')">LET`S GO!!</div>
-
   </div>
 
+  <div class="elegidos">
+    <div id="elegidoUno" class="elegidoUno elegido"></div>    
+    <div><img class="versus" src="./img/Versus.png" alt="versus"></div> 
+    <div id="elegidoDos" class="elegidoDos elegido"></div> 
+    <div class="btn" onclick="screenSwitch('pantalla3')">LET`S GO!!</div>
+  </div>
 
 </div>  
     
 
 
-
-
-
-
-
-
-
   
-  <div id="pantalla3" onclick="screenSwitch('pantalla1')">
-  
+<div id="pantalla3" >
+  <div>
+    <video id="video" muted autoplay loop src="/img/Rain - 305.mp4" type="video/mp4"></video>
   </div>
+<div id="capa"></div>
+
+
+
+<!-- CONTENEDOR IZQUIERDO -->
+
+<div class="contenedor">
+
+<div class="cont-barra">
+  <div class="barra-vida"></div>
+</div>
+
+
+<div class="cont-stats">
+  <div class="elegido3"></div> 
+</div>
+
+
+
+<div class="cont-imagen"></div>
+<div class="cont-boton"></div>
+
+
+</div>
+
+
+
+<div class="contenedor">
+TEXTO DEBE VERSE POR AQUI
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

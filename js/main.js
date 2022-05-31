@@ -9,33 +9,29 @@ let bichoDerecha = document.getElementById("elegidoDosData");
 let imagenIzquierda = document.getElementById("elegidoUno");
 let imagenDerecha = document.getElementById("elegidoDos");
 
+
+
+
 const screenSwitch = (pantallaDestino) => {
-
-    let destino = document.getElementById(pantallaDestino);
-    destino.style.display = "flex";
-    let pantallas = ["pantalla1","pantalla2","pantalla3","pantalla4","pantalla5"];
-
-    for(let pantalla of pantallas){
-        if(pantalla != pantallaDestino){
-            document.getElementById(pantalla).style.display = "none";
-        };
-    };
-   
-};
+  let destino = document.getElementById(pantallaDestino);
+  destino.style.display = "flex";
+  let pantallas = ["pantalla1","pantalla2","pantalla3","pantalla4","pantalla5"];
+  for(let pantalla of pantallas){
+    if(pantalla != pantallaDestino)
+    {document.getElementById(pantalla).style.display = "none";
+  }
+}
+}
 
 const selecciona = (bicho) => {
-    
-    
-    if(jugador.length < 2){
+  if(jugador.length < 2){
+    jugador.push(allPlayers[bicho]);
+    imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+    imagenDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+  }
+}
 
-        //Diccionario de js
-        jugador.push(allPlayers[bicho]);
-        imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-        imagenDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
-        
-        console.log(jugador);
-    }
-}// OJO A RESOLUCION PANTALLA PORTATIL
+// OJO A RESOLUCION PANTALLA PORTATIL
 
         //Una vez hemos introducido el coche en el array...
         //comprobamos si la longitud del array es 2. 
