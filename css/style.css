@@ -73,11 +73,13 @@
     font-weight: 600;
   }
 .contenedor-players{
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;   
 }
 .player{
+    margin-top: 1em;
     cursor:none;
     min-width: 9em;
     height: 7em;
@@ -106,7 +108,7 @@
     font-size:large;
     cursor:none;
     min-width: 15em;
-    height: 7em;
+    height: 8em;
     margin: 4em 4em 0em 4em;
     border: .1em solid rgb(65, 148, 57);
     border-radius: 40%;
@@ -166,6 +168,7 @@
     background-color: #f00;
     box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
     border-radius: .5em;
+    margin-bottom: 2em;
 }
 .cont-stats{
     display: flex;
@@ -175,8 +178,9 @@
     height: 15vh;
 }
 .elegido3{
-    width: 20em;
-    height: 10em;
+
+    min-width: 15em;
+    height: 8em;
     border-radius: 2em;
     box-shadow: 0px 0px 32px 14px yellow;
     color: yellow;
@@ -186,8 +190,6 @@
     justify-content: center;
 }
 .cont-imagen{
-    margin: 1em;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,7 +197,7 @@
     height: 45vh;
 }
 .imagen-pag-tres{
-    margin: 1em;
+    margin-top: 3em;
     width: 25em;
     height: 20em;
     border-radius: 4em;
@@ -210,9 +212,7 @@
     height: 20vh;
 }
 .boton{
-    margin:0em 1em 0em 1em;
-    width: 6em;
-    height: 3em;
+    margin:0em 1em 0em 1em;    
     box-shadow: 3px 4px 0px 0px #8a2a21;
 	background:linear-gradient(to bottom, #252424 5%, #630e08 100%);
 	background-color:#c62d1f;
