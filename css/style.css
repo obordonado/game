@@ -52,7 +52,7 @@
     letter-spacing: .5em;
 }
 .btn{
-    width: 10em;
+    min-width: 10em;
     height: 1em;
     font-family: Helvetica;
     letter-spacing: 0.2em;
@@ -78,10 +78,10 @@
 }
 .player{
     cursor:none;
-    width: 9em;
+    min-width: 9em;
     height: 9em;
     margin: 3em 8em 0em 8em;
-    border: 1em solid rgb(34, 235, 16);
+    border: 1em dashed rgb(116, 26, 4);
     border-radius: 40%;
     box-shadow: 0px 0px 42px 34px rgba(0,0,0,0.79);
 }
@@ -104,10 +104,10 @@
     color: yellow;
     font-size:x-large;
     cursor:none;
-    width: 12em;
+    min-width: 12em;
     height: 8em;
     margin: 4em 4em 0em 4em;
-    border: .1em solid rgb(34, 235, 16);
+    border: .1em solid rgb(65, 148, 57);
     border-radius: 40%;
     box-shadow: 0px 0px 42px 34px rgba(0,0,0,0.79);
 }
@@ -210,7 +210,7 @@
     width: 6em;
     height: 3em;
     box-shadow: 3px 4px 0px 0px #8a2a21;
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #252424 5%, #630e08 100%);
 	background-color:#c62d1f;
 	border-radius:1.5em;
 	border:1px solid #d02718;
@@ -226,10 +226,11 @@
 .boton:hover {
 	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
 	background-color:#f24437;
+
 }
 .boton:active {
 	position:relative;
 	top:1px;
     box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
-    color: #f00;
+    color: rgb(219, 233, 25);
 }
