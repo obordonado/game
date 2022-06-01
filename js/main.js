@@ -3,18 +3,19 @@ let jugador = [];
 
 // let ganador = "";
 
-//Apunta a los stats de los jugadores en ventanas inferiores de pantalla 2
+//Apunta contra los stats de los jugadores en ventanas inferiores de pantalla 2
 let imagenIzquierda = document.getElementById("elegidoUno");
 let imagenDerecha =   document.getElementById("elegidoDos");
 
 
-//Apunta a los stats de los jugadores en ventanas superiores de pantalla 3
+//Apunta contra los stats de los jugadores en ventanas superiores de pantalla 3
 let elegidoIzq =      document.getElementsByClassName("elegidoIzq");
 let elegidoDer =      document.getElementsByClassName("elegidoDer");
 
-//Apunta a las imágenes de jugadores pantalla 3
+//Apunta contra las imágenes de jugadores pantalla 3
 let imagenPagTresIz = document.getElementsByClassName("imagenPagTresIzq");
 let imagenPagTresDe = document.getElementsByClassName("imagenPagTresDer");
+
 
 
 const screenSwitch = (pantallaDestino) => {
@@ -34,34 +35,29 @@ const selecciona = (bicho) => {
     jugador.push(allPlayers[bicho]);
     imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
     imagenDerecha.innerHTML =   `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
-
+// Player 2 = "Uncaught TypeError: Cannot read properties of undefined (reading 'nombre')" - pero si los muestra ¿?
   };
 };
 
 // const limpiar = () => {
-
 //     jugador = [];
-
 //     ganador = "";
-
 //     danoIzquierda.innerHTML = ``;
-
 //     danosDerecha.innerHTML = ``;
-
 //     coche1.metros = 0;
 //     coche2.metros = 0;
 //     coche3.metros = 0;
 //     coche4.metros = 0;
-
 //     setTimeout(()=>{
-
 //         screenSwitch("pantalla1");
 //     },2000);
-
 // };
 
-// elegidoIzq.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-// elegidoDer.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+
+
+
+
+// SUPUESTO DE ENVÍO DE DATOS A PANTALLA 3 Y CONSTRUCCIÓN 
 
 // if(jugador.length===2){
 //   setTimeout(()=>{
@@ -120,3 +116,6 @@ const selecciona = (bicho) => {
 //     },200);
 //   },200);
 // };
+
+// elegidoIzq.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+// elegidoDer.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
