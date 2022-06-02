@@ -6,28 +6,16 @@ class Pokemon {
     this.fuerza = fuerza;
     this.defensa = defensa;
   }
+};
 
-  recuperar() {
-    if(this.puntosvida<100){
-      this.puntosvida =this.puntosvida + 20;
-    }
-  }
-  
-  atacar(enemigo){
-    enemigo.puntosvida -= Math.round(Math.random())*10;
-  }
-
-}
-
-
-let tortuga = new Pokemon("Tortuga",150,60,50);
-let conejo = new Pokemon("Conejo",100,80,20);
-let verdura = new Pokemon("Verdura",110,70,35);
-let blastoise = new Pokemon("Blastoise",130,90,45);
-let coloseum = new Pokemon("Coloseum",200,40,70);
-let dino = new Pokemon("Dino",210,83,58);
-let evee = new Pokemon("Evee",270,80,65);
-let vaporeon = new Pokemon("Vaporeon",280,86,72);
+let tortuga = new Pokemon("Tortuga",550,60,50);
+let conejo = new Pokemon("Conejo",400,80,20);
+let verdura = new Pokemon("Verdura",310,70,35);
+let blastoise = new Pokemon("Blastoise",430,90,45);
+let coloseum = new Pokemon("Coloseum",300,40,70);
+let dino = new Pokemon("Dino",310,83,58);
+let evee = new Pokemon("Evee",470,80,65);
+let vaporeon = new Pokemon("Vaporeon",480,86,72);
 
 let allPlayers = {
   "1": tortuga,
