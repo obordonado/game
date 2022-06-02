@@ -11,7 +11,7 @@
 <body>
               <!-- PANTALLA 1 -->
 <div id="pantalla1">  
-  <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>    
+  <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>    <!------>
   <!-- <audio src="/music/inicio.mp3" autoplay loop></audio> -->
 </div>
 
@@ -40,7 +40,7 @@
     <div id="elegidoUno" class="elegidoUno elegido"></div>    
     <div><img class="versus" src="./img/Versus.png" alt="versus"></div> 
     <div id="elegidoDos" class="elegidoDos elegido"></div> 
-    <div class="btn" onclick="screenSwitch('pantalla3')">LET`S GO!!</div>
+    <div class="btn" onclick="screenSwitch('pantalla3')">LET`S GO!!</div> <!----->
   </div>
 
 </div>  
@@ -51,11 +51,11 @@
   
 <div id="pantalla3" >
   
-  <div><video id="video" muted autoplay loop src="./img/Rain - 305.mp4" type="video/mp4"></video></div>
-  <div id="capa"></div>
+<div><video id="video" muted autoplay loop src="./img/Rain - 305.mp4" type="video/mp4"></video></div>
+<div id="capa"></div>
 
 <!-- CONTENEDOR GENERAL -->
-<div class="contenedor">
+<div id="contenedor" class="contenedor">
 
 
 <!-- CONTENEDOR IZQUIERDO -->
@@ -64,10 +64,10 @@
     <div class="barra-vida"></div>
   </div>
   <div class="cont-stats">
-    <div class="elegidoIzq elegido3"></div>
+    <div id="statIz" class="elegidoIzq elegido3"></div>
   </div>
   <div class="cont-imagen">
-    <div class="imagenPagTresIzq imagenPagTres"></div>
+    <div id="imagenPagTresIzq" class="imagenPagTresIzq imagenPagTres"></div>
   </div>
   <div class="cont-boton">
     <div class="boton">ATTACK !!</div>
@@ -76,23 +76,24 @@
 </div>
 
  <!-- CONTENEDOR DERECHO  -->
-<div class="cont-lados">
+ <div class="cont-lados">
 
   <div class="cont-barra">
     <div class="barra-vida"></div>
   </div>
 
   <div class="cont-stats">
-    <div class="elegidoDer elegido3"></div> 
+    <div id="statDer" class="elegidoDer elegido3"></div> 
   </div>
   
   <div class="cont-imagen">
-    <div class="imagenPagTresDer imagenPagTres"></div>
+    <div id="imagenPagTresDer" class="imagenPagTresDer imagenPagTres"></div>
   </div>
   <div class="cont-boton">
     <div class="boton">ATTACK !!</div>
     <div class="boton">HEAL</div>
   </div>
+
 </div>
 
 

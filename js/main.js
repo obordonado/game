@@ -7,14 +7,19 @@ let jugador = [];
 let imagenIzquierda = document.getElementById("elegidoUno");
 let imagenDerecha =   document.getElementById("elegidoDos");
 
+//Apunta contra el contenedor general de pantalla 3
+let batalla = document.getElementsByClassName("contenedor")
+let statDer = document.getElementById("statDer");
+let statIz = document.getElementById("statIz");
 
 //Apunta contra los stats de los jugadores en ventanas superiores de pantalla 3
 let elegidoIzq =      document.getElementsByClassName("elegidoIzq");
 let elegidoDer =      document.getElementsByClassName("elegidoDer");
 
 //Apunta contra las imágenes de jugadores pantalla 3
-let imagenPagTresIz = document.getElementsByClassName("imagenPagTresIzq");
-let imagenPagTresDe = document.getElementsByClassName("imagenPagTresDer");
+let imagenPagTresIz = document.getElementById("imagenPagTresIzq");
+
+let imagenPagTresDe = document.getElementById("imagenPagTresDer");
 
 
 
@@ -31,12 +36,50 @@ const screenSwitch = (pantallaDestino) => {
 };
 
 const selecciona = (bicho) => {
-  if(jugador.length < 2){
+  if(jugador.length < 1){
     jugador.push(allPlayers[bicho]);
     imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-    imagenDerecha.innerHTML =   `PLAYER 2 <br><br>Nombre : ${jugador[1]?.nombre} <br> Vida : ${jugador[1]?.puntosvida} <br> Fuerza : ${jugador[1]?.fuerza} <br> Defensa : ${jugador[1]?.defensa}`;
-  };
+    statIz.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+    imagenPagTresIz.innerHTML =`${jugador[0]}`;
+  }
+  else if(jugador.length<2){
+    jugador.push(allPlayers[bicho]);
+    imagenDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+    statDer.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
+   imagenPagTresDe.innerHTML= `<img src='${jugador[1]}.png'>`
+
+  }
+
 };
+
+
+
+
+
+// SUPUESTO DE ENVÍO DE DATOS A PANTALLA 3 Y CONSTRUCCIÓN 
+
+// if(jugador.length>=2){
+
+
+
+
+
+
+
+  
+   
+  
+
+  
+  
+
+
+  
+
+// };
+
+// elegidoIzq.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
+// elegidoDer.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
 
 // const limpiar = () => {
 //     jugador = [];
@@ -51,70 +94,3 @@ const selecciona = (bicho) => {
 //         screenSwitch("pantalla1");
 //     },2000);
 // };
-
-
-
-
-
-// SUPUESTO DE ENVÍO DE DATOS A PANTALLA 3 Y CONSTRUCCIÓN 
-
-// if(jugador.length===2){
-//   setTimeout(()=>{
-
-//     batalla.innerHTML = `
-
-//     <div class="cont-lados">
-//       <div class="cont-barra">
-//         <div class="barra-vida"></div>
-//       </div>
-//       <div class="cont-stats">
-//         <div class="elegidoIzq elegido3"></div>
-//       </div>
-//       <div class="cont-imagen">
-//         <div class="imagenPagTresIzq">    
-//           <img src='img/${jugador[0]}.png'>   
-//         </div>
-//       </div>
-//       <div class="cont-boton">
-//         <div class="boton">ATTACK !!</div>
-//         <div class="boton">HEAL</div>
-//       </div>
-//     </div>
-        
-//     <div class="cont-lados">
-//       <div class="cont-barra">
-//         <div class="barra-vida"></div>
-//       </div>
-//       <div class="cont-stats">
-//         <div class="elegidoDer elegido3"></div> 
-//       </div>
-//       <div class="cont-imagen">
-//         <div class="imagenPagTresDer">        
-//         <img src='img/${jugador[1]}.png'>       
-//         </div>
-//       </div>
-//       <div class="cont-boton">
-//         <div class="boton">ATTACK !!</div>
-//         <div class="boton">HEAL</div>
-//       </div>
-//     </div>    
-//     `;
-    
-//     // screenSwitch("pantalla3");
-
-
-//     setTimeout(()=>{
-
-//       elegidoIzq.innerHTML = "PLAYER 1 <br><br>Nombre : " + `${jugador[0].nombre}`+ " <br> +Vida : " + `${jugador[0].puntosvida}` + "<br> Fuerza : " + `${jugador[0].fuerza}` + "<br> Defensa : " + `${jugador[0].defensa}`;
-//       elegidoDer.innerHTML = "PLAYER 2 <br><br>Nombre : " + `${jugador[1].nombre}`+ " <br> +Vida : " + `${jugador[1].puntosvida}` + "<br> Fuerza : " + `${jugador[1].fuerza}` + "<br> Defensa : " + `${jugador[1].defensa}`;
-
-//       imagenPagTresIz.innerHTML =` <div class="imagenPagTresDer"> <img src='img/${jugador[0]}.png'> </div> `
-      
-//       imagenPagTresDe.innerHTML= ` <div class="imagenPagTresDer"> <img src='img/${jugador[1]}.png'> </div> `
-
-//     },200);
-//   },200);
-// };
-
-// elegidoIzq.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-// elegidoDer.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
