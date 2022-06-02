@@ -34,8 +34,7 @@ const selecciona = (bicho) => {
   if(jugador.length < 2){
     jugador.push(allPlayers[bicho]);
     imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-    imagenDerecha.innerHTML =   `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
-// Player 2 = "Uncaught TypeError: Cannot read properties of undefined (reading 'nombre')" - pero si los muestra ¿?
+    imagenDerecha.innerHTML =   `PLAYER 2 <br><br>Nombre : ${jugador[1]?.nombre} <br> Vida : ${jugador[1]?.puntosvida} <br> Fuerza : ${jugador[1]?.fuerza} <br> Defensa : ${jugador[1]?.defensa}`;
   };
 };
 
