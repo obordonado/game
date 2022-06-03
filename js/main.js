@@ -1,7 +1,7 @@
 
 let jugador = [];
 
-// let ganador = "";
+let ganador = "";
 
 //Apunta contra los stats de los jugadores en ventanas inferiores de pantalla 2
 let imagenIzquierda = document.getElementById("elegidoUno");
@@ -84,16 +84,18 @@ healDer=()=>{
   }
 
 
-// const limpiar = () => {
-//     jugador = [];
-//     ganador = "";
-//     danoIzquierda.innerHTML = ``;
-//     danosDerecha.innerHTML = ``;
-//     coche1.metros = 0;
-//     coche2.metros = 0;
-//     coche3.metros = 0;
-//     coche4.metros = 0;
-//     setTimeout(()=>{
-//         screenSwitch("pantalla1");
-//     },2000);
-// };
+const limpiar = () => {
+    jugador = [];
+    ganador = "";
+    imagenIzquierda.innerHTML = ``;
+    imagenDerecha.innerHTML = ``;
+    statDer.innerHTML = ``;
+    statIz.innerHTML = ``;
+    elegidoIzq.innerHTML = ``;
+    elegidoDer.innerHTML = ``;
+    imagenPagTresIz.innerHTML = ``;
+    imagenPagTresDe.innerHTML = ``;
+    setTimeout(()=>{
+        screenSwitch("pantalla1");
+    },2000);
+};
