@@ -11,7 +11,7 @@
 <body>
               <!-- PANTALLA 1 -->
 <div id="pantalla1">  
-  <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>    <!------>
+  <p class="boton-start" onclick="screenSwitch('pantalla2')">START</p>
   <!-- <audio src="/music/inicio.mp3" autoplay loop></audio> -->
 </div>
 
@@ -23,17 +23,17 @@
   <div class="cabecera"><h1>ELIGE A DOS CONTRINCANTES</h1></div>  
     
   <div class="contenedor-players">
-    <div><img class="player" onclick="selecciona(`1`)" src="/img/bicho.png" alt="tortuga"></div>
-    <div><img class="player" onclick="selecciona(`2`)" src="/img/bichoDos.png" alt="conejo"></div>
-    <div><img class="player" onclick="selecciona(`3`)" src="/img/bichoTres.png" alt="verdura"></div>
-    <div><img class="player" onclick="selecciona(`4`)" src="/img/blastoise.png" alt="blastoise"></div>
+    <div><img class="player" onclick="selecciona(`1`)" src="./img/bicho.png" alt="tortuga"></div>
+    <div><img class="player" onclick="selecciona(`2`)" src="./img/bichoDos.png" alt="conejo"></div>
+    <div><img class="player" onclick="selecciona(`3`)" src="./img/bichoTres.png" alt="verdura"></div>
+    <div><img class="player" onclick="selecciona(`4`)" src="./img/blastoise.png" alt="blastoise"></div>
   </div>
 
   <div class="contenedor-players">
-    <div><img class="player" onclick="selecciona(`5`)" src="/img/coloseum.png" alt="coloseum"></div>
-    <div><img class="player" onclick="selecciona(`6`)" src="/img/dino.png" alt="dino"></div>
-    <div><img class="player" onclick="selecciona(`7`)" src="/img/evee.png" alt="evee"></div>
-    <div><img class="player" onclick="selecciona(`8`)" src="/img/vaporeon.png" alt="vaporeon"></div>
+    <div><img class="player" onclick="selecciona(`5`)" src="./img/coloseum.png" alt="coloseum"></div>
+    <div><img class="player" onclick="selecciona(`6`)" src="./img/dino.png" alt="dino"></div>
+    <div><img class="player" onclick="selecciona(`7`)" src="./img/evee.png" alt="evee"></div>
+    <div><img class="player" onclick="selecciona(`8`)" src="./img/vaporeon.png" alt="vaporeon"></div>
   </div>
 
   <div class="elegidos">
@@ -44,7 +44,6 @@
   </div>
 
 </div>  
-    
 
 
               <!-- PANTALLA 3 -->
@@ -60,9 +59,7 @@
 
 <!-- CONTENEDOR IZQUIERDO -->
 <div class="cont-lados">
-  <div class="cont-barra">
-    <div class="barra-vida"></div>
-  </div>
+  <div id="cont-barra-izq" class="cont-barra">INSERTAR CONSOLE.LOG AQUI</div>
   <div class="cont-stats">
     <div id="statIz" class="elegidoIzq elegido3"></div>
   </div>
@@ -78,9 +75,7 @@
  <!-- CONTENEDOR DERECHO  -->
  <div class="cont-lados">
 
-  <div class="cont-barra">
-    <div class="barra-vida"></div>
-  </div>
+  <div id="cont-barra-der" class="cont-barra">INSERTAR CONSOLE.LOG AQUI</div>
 
   <div class="cont-stats">
     <div id="statDer" class="elegidoDer elegido3"></div> 
@@ -103,15 +98,20 @@
               <!-- PANTALLA 4 -->
 <div id="final">
 
-<div class="contPantCuatro" onclick=" limpiar()">
 
-<div class="superior"><H1>¡¡¡ PLAYER $$$$ HA GANADO !!!<!DOCTYPE html></H1></div>
+<div class="contPantCuatro" onclick="limpiar()" >
+
+<div id="superior">
+<div class="cabecera4"><H1>Click en pantalla para reiniciar partida</H1></div>
+<div class="subCabecera4"></div>   
+</div>
+
 <div class="inferior">
   <div class="inferiorIzq">
-    <div class="imagenGanador"></div>
+    <div id="imagenGanador"></div>
   </div>
   <div class="inferiorDer">
-    <div class="datosGanador"></div>
+    <div id="datosGanador"></div>
   </div>
 </div>
 </div>

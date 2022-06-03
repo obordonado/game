@@ -154,6 +154,7 @@
 .cont-lados{
     width: 45%;
     height: 100vh;
+    margin-top: 1em;
 }
 .cont-barra{
     width: 100%;
@@ -162,17 +163,12 @@
     justify-content: center;
     align-items: center;
     background-color: #f00;
+    border-radius: 1em;
+
 
 }
-.barra-vida{
-    width: 90%;
-    height: 2em;
-    background-color: #0f0;
-    box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
-    border-radius: .5em;
-    margin-bottom: 2em;
-}
 .cont-stats{
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,20 +236,30 @@
     color: rgb(219, 233, 25);
 }
 /* INICIO PANTALLA 4 */
-#pantalla4{
+#final{
+    background-image: url(/img/pokemon-red-wallpaper.jpg);
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #222;
 }
-.superior{
+
+#superior{
     width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0f0;
+}
+.cabecera4{
+    text-align: center;
+    width: 45em;
+    height: 2em;
+}
+.subCabecera4{
+    text-align: center;
+    width: 45em;
+    height: 2em;
 }
 .inferior{
     width: 100%;
@@ -262,7 +268,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 .inferiorIzq{
     width: 45%;
@@ -270,12 +276,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .imagenGanador{
     width: 25em;
     height: 25em;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 .inferiorDer{
     width: 45%;
@@ -283,10 +289,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
-.datosGanador{
+#imagenGanador{
     width: 25em;
     height: 25em;
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size:x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:2px 2px #94c743;
+    /* background-color: blueviolet; */
 }

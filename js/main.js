@@ -16,10 +16,19 @@ let elegidoIzq =      document.getElementsByClassName("elegidoIzq");
 let elegidoDer =      document.getElementsByClassName("elegidoDer");
 
 //Apunta contra las imágenes de jugadores pantalla 3
-let imagenPagTresIz = document.getElementById("imagenPagTresIzq");
+let imagenPagTresIzq = document.getElementById("imagenPagTresIzq");
+let imagenPagTresDer = document.getElementById("imagenPagTresDer");
+let contBarraIzq = document.getElementById("cont-barra-izq");
+let contBarraDer = document.getElementById("cont-barra-der");
 
-let imagenPagTresDe = document.getElementById("imagenPagTresDer");
 
+//Apuntando contra pantalla "final"
+
+let inferior = document.getElementsByClassName("inferior");
+let inferiorIzq = document.getElementsByClassName("inferiorIzq");
+let inferiorDer = document.getElementsByClassName("inferiorDer");
+let imagenGanador = document.getElementById("imagenGanador");
+let datosGanador = document.getElementById("datosGanador");
 
 
 const screenSwitch = (pantallaDestino) => {
@@ -39,51 +48,58 @@ const selecciona = (bicho) => {
     jugador.push(allPlayers[bicho]);
     imagenIzquierda.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
     statIz.innerHTML = `PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
-    imagenPagTresIz.innerHTML = `<img class="player" src='/img/${jugador[0].nombre}.jpg'/>`;/// FIX///
+    imagenPagTresIzq.innerHTML = `<img class="player" src='/img/${jugador[0].nombre}.png'/>`;/// FIX///
+    console.log(jugador[0]);
   }
   else if(jugador.length<2){
     jugador.push(allPlayers[bicho]);
     imagenDerecha.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
     statDer.innerHTML = `PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
-    imagenPagTresDe.innerHTML= `<img class="player" src='../img/${jugador[1].nombre}.jpg'/>`;/// FIX///
-
+    imagenPagTresDer.innerHTML= `<img class="player" src='.img/${jugador[1].nombre}.png'/>`;/// FIX///
+    console.log(jugador[1]);
   }
 
 }
 
+/// MÉTODOS DE JUGADORES CON VARIOS ATRIBUTOS DE CLASE QUE SERÁN DISTINTOS SEGÚN PERSONAJE ELEGIDO
+
 golpearIzq=()=>{
   jugador[1].puntosvida -= jugador[0].fuerza*(Math.round(Math.random())*10)/5;
-  console.log("Player Dos vida : " + jugador[1].puntosvida);
+  contBarraDer.innerHTML ="Player Dos vida : " + jugador[1].puntosvida;
   if(jugador[1].puntosvida <=0){
     console.log("Jugador 2 ha perdido");
     jugador[0].puntosvida === 0;
     setTimeout(()=>{
       screenSwitch(`final`);
+      imagenGanador.innerHTML = `GANADOR -- PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
     },1000);    
   }
 }
+
 golpearDer=()=>{
   jugador[0].puntosvida -=jugador[1].fuerza*(Math.round(Math.random())*10)/5;
-  console.log("Player Uno vida : " + jugador[0].puntosvida);
+  contBarraIzq.innerHTML ="Player Uno vida : " + jugador[0].puntosvida;
   if(jugador[0].puntosvida <=0){
     console.log("Jugador 1 ha perdido");
     jugador[1].puntosvida === 0;
     setTimeout(()=>{
       screenSwitch(`final`);
+      imagenGanador.innerHTML = `GANADOR -- PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
     },1000);    
   }
 }
+
 healIzq=()=>{
 jugador[0].puntosvida += jugador[0].defensa*(Math.round(Math.random())*3)/2;
-console.log("Jugador Uno puntos de vida : " + jugador[0].puntosvida);
-
+contBarraIzq.innerHTML ="Player Dos vida : " + jugador[0].puntosvida;
 };
+
 healDer=()=>{
   jugador[1].puntosvida += jugador[0].defensa*(Math.round(Math.random())*3)/2;
-  console.log("Jugador Dos puntos de vida : " + jugador[1].puntosvida);
-  }
+  contBarraDer.innerHTML ="Player Dos vida : " + jugador[1].puntosvida;
+}
 
-
+  /// TRAS SALIR DE PANTALLA FINAL A INICIO, LIMPIA TODOS DATOS PARA INICIAR PARTIDA DESDE O
 const limpiar = () => {
     jugador = [];
     ganador = "";
@@ -93,9 +109,12 @@ const limpiar = () => {
     statIz.innerHTML = ``;
     elegidoIzq.innerHTML = ``;
     elegidoDer.innerHTML = ``;
-    imagenPagTresIz.innerHTML = ``;
-    imagenPagTresDe.innerHTML = ``;
+    contBarraDer.innerHTML ="";
+    contBarraIzq.innerHTML ="";
+
     setTimeout(()=>{
         screenSwitch("pantalla1");
     },2000);
 };
+///INCLUIR EN BARRA DE VIDA EL TEXTO QUE SALE POR CONSOLE TRAS SUFRIR GOLPE ETC
+///MODIFICAR ancho de barra vida
