@@ -161,11 +161,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f00;
+
 }
 .barra-vida{
-    width: 80%;
+    width: 90%;
     height: 2em;
-    background-color: #f00;
+    background-color: #0f0;
     box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
     border-radius: .5em;
     margin-bottom: 2em;
@@ -178,7 +180,6 @@
     height: 15vh;
 }
 .elegido3{
-
     min-width: 15em;
     height: 8em;
     border-radius: 2em;
@@ -237,4 +238,55 @@
 	top:1px;
     box-shadow: 7px 9px 5px rgba(239, 239, 239, 0.75);
     color: rgb(219, 233, 25);
+}
+/* INICIO PANTALLA 4 */
+#pantalla4{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+}
+.superior{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0;
+}
+.inferior{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: tomato;
+}
+.inferiorIzq{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.imagenGanador{
+    width: 25em;
+    height: 25em;
+    background-color: blueviolet;
+}
+.inferiorDer{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.datosGanador{
+    width: 25em;
+    height: 25em;
+    background-color: blueviolet;
 }
