@@ -56,7 +56,7 @@ const selecciona = (bicho) => {
     imagenPagTresDer.innerHTML= `<img class="player" src='.img/${jugador[1].nombre}.png'/>`;/// FIX///
     console.log(jugador[1]);
   }
-
+  
 }
 
 /// MÉTODOS DE JUGADORES CON VARIOS ATRIBUTOS DE CLASE QUE SERÁN DISTINTOS SEGÚN PERSONAJE ELEGIDO
