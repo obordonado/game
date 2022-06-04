@@ -1,8 +1,6 @@
 
 let jugador = [];
 
-let ganador = "";
-
 //Apunta contra los stats de los jugadores en ventanas inferiores de pantalla 2
 let imagenIzquierda = document.getElementById("elegidoUno");
 let imagenDerecha =   document.getElementById("elegidoDos");
@@ -116,5 +114,3 @@ const limpiar = () => {
         screenSwitch("pantalla1");
     },2000);
 };
-///INCLUIR EN BARRA DE VIDA EL TEXTO QUE SALE POR CONSOLE TRAS SUFRIR GOLPE ETC
-///MODIFICAR ancho de barra vida
