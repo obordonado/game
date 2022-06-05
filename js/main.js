@@ -10,8 +10,8 @@ let statDer = document.getElementById("statDer");
 let statIz = document.getElementById("statIz");
 
 //Apunta contra los stats de los jugadores en ventanas superiores de pantalla 3
-let elegidoIzq =      document.getElementsByClassName("elegidoIzq");
-let elegidoDer =      document.getElementsByClassName("elegidoDer");
+let elegidoUno =      document.getElementById("elegidoUno");
+let elegidoDos =      document.getElementById("elegidoDos");
 
 //Apunta contra las imágenes de jugadores pantalla 3
 let imagenPagTresIzq = document.getElementById("imagenPagTresIzq");
@@ -65,7 +65,6 @@ golpearIzq=()=>{
   jugador[1].puntosvida -= jugador[0].fuerza*(Math.round(Math.random())*10)/5;
   contBarraDer.innerHTML ="Player Dos vida : " + jugador[1].puntosvida;
   if(jugador[1].puntosvida <=0){
-    console.log("Jugador 2 ha perdido");
     jugador[0].puntosvida === 0;
     setTimeout(()=>{
       screenSwitch(`final`);
@@ -78,7 +77,6 @@ golpearDer=()=>{
   jugador[0].puntosvida -=jugador[1].fuerza*(Math.round(Math.random())*10)/5;
   contBarraIzq.innerHTML ="Player Uno vida : " + jugador[0].puntosvida;
   if(jugador[0].puntosvida <=0){
-    console.log("Jugador 1 ha perdido");
     jugador[1].puntosvida === 0;
     setTimeout(()=>{
       screenSwitch(`final`);
@@ -100,13 +98,12 @@ healDer=()=>{
   /// TRAS SALIR DE PANTALLA FINAL A INICIO, LIMPIA TODOS DATOS PARA INICIAR PARTIDA DESDE O
 const limpiar = () => {
     jugador = [];
-    ganador = "";
-    imagenIzquierda.innerHTML = ``;
-    imagenDerecha.innerHTML = ``;
-    statDer.innerHTML = ``;
-    statIz.innerHTML = ``;
-    elegidoIzq.innerHTML = ``;
-    elegidoDer.innerHTML = ``;
+    imagenIzquierda.innerHTML = "";
+    imagenDerecha.innerHTML = "";
+    statDer.innerHTML = "";
+    statIz.innerHTML = "";
+    elegidoDos.innerHTML = "";
+    elegidoUno.innerHTML = "";
     contBarraDer.innerHTML ="";
     contBarraIzq.innerHTML ="";
 
