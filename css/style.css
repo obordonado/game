@@ -6,7 +6,7 @@
 /* INICIO PANTALLA 1 */
 #pantalla1 {
     height: 100vh;
-    background-image: url(/img/pantalla-inicio.jpg);
+    background-image: url(./img/pantalla-inicio.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
     height: 100vh;
     width: 100vw;
     display: none;
-    background-image: url(/img/arena.jpg);
+    background-image: url(./img/arena.jpg);
     background-size: cover;
     cursor: pointer;
     display: flex;
@@ -232,7 +232,7 @@
 }
 /* INICIO PANTALLA FINAL/////////////////////////////// */
 #final{
-    background-image: url(/img/pokemon-red-wallpaper.jpg);
+    background-image: url(./img/pokemon-red-wallpaper.jpg);
     width: 100vw; 
     height: 100vh;
     display: flex;
