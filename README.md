@@ -1,3 +1,5 @@
+<img src="/img/GeeksHubs.png" alt="html" width="150"/>
+
 ##>>>> Pokemon Game !<<<<
 ><img src="/img/html.png" alt="html" width="40"/>  <img src="/img/css.png" alt="html" width="50"/>  <img src="/img/javascript.png" alt="html" width="40"/>
 
