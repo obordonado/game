@@ -8,14 +8,14 @@ class Pokemon {
   }
 };
 
-let tortuga = new Pokemon("Tortuga",550,60,50);
-let conejo = new Pokemon("Conejo",400,80,20);
-let verdura = new Pokemon("Verdura",310,70,35);
-let blastoise = new Pokemon("Blastoise",430,90,45);
-let coloseum = new Pokemon("Coloseum",300,40,70);
-let dino = new Pokemon("Dino",310,83,58);
-let evee = new Pokemon("Evee",470,80,65);
-let vaporeon = new Pokemon("Vaporeon",480,86,72);
+let tortuga = new Pokemon("tortuga",550,60,50);
+let conejo = new Pokemon("conejo",400,80,20);
+let verdura = new Pokemon("verdura",310,70,35);
+let blastoise = new Pokemon("blastoise",430,90,45);
+let coloseum = new Pokemon("coloseum",300,40,70);
+let dino = new Pokemon("dino",310,83,58);
+let evee = new Pokemon("evee",470,80,65);
+let vaporeon = new Pokemon("vaporeon",480,86,72);
 
 let allPlayers = {
   "1": tortuga,

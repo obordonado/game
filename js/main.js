@@ -107,6 +107,7 @@ const limpiar = () => {
     contBarraDer.innerHTML ="";
     contBarraIzq.innerHTML ="";
 
+
     setTimeout(()=>{
         screenSwitch("pantalla1");
     },2000);
