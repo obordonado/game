@@ -1,4 +1,6 @@
 ##>>>> Pokemon Game !<<<<
+> For this game, I've used HMTL, CSS and JAVASCRIPT VANILLA
+
 >It's coded using "display:none" in order to have a unique html file, but giving the sensation of 4 different screens.
 The game is designed to be played full screen. (Press F11 on your keyboard)<br>
 ------------
