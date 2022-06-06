@@ -70,6 +70,7 @@ golpearIzq=()=>{
     console.log("Jugador 2 ha perdido");
     jugador[0].puntosvida === 0;
     setTimeout(()=>{
+      limpiar();
       screenSwitch(`final`);
       imagenGanador.innerHTML = `GANADOR -- PLAYER 1 <br><br>Nombre : ${jugador[0].nombre} <br> Vida : ${jugador[0].puntosvida} <br> Fuerza : ${jugador[0].fuerza} <br> Defensa : ${jugador[0].defensa}`;
     },1000);    
@@ -83,6 +84,7 @@ golpearDer=()=>{
     console.log("Jugador 1 ha perdido");
     jugador[1].puntosvida === 0;
     setTimeout(()=>{
+      limpiar();
       screenSwitch(`final`);
       imagenGanador.innerHTML = `GANADOR -- PLAYER 2 <br><br>Nombre : ${jugador[1].nombre} <br> Vida : ${jugador[1].puntosvida} <br> Fuerza : ${jugador[1].fuerza} <br> Defensa : ${jugador[1].defensa}`;
     },1000);    
@@ -91,7 +93,7 @@ golpearDer=()=>{
 
 healIzq=()=>{
 jugador[0].puntosvida += jugador[0].defensa*(Math.round(Math.random())*3)/2;
-contBarraIzq.innerHTML ="Player Dos vida : " + jugador[0].puntosvida;
+contBarraIzq.innerHTML ="Player Uno vida : " + jugador[0].puntosvida;
 };
 
 healDer=()=>{
@@ -116,5 +118,3 @@ const limpiar = () => {
         screenSwitch("pantalla1");
     },2000);
 };
-///INCLUIR EN BARRA DE VIDA EL TEXTO QUE SALE POR CONSOLE TRAS SUFRIR GOLPE ETC
-///MODIFICAR ancho de barra vida
